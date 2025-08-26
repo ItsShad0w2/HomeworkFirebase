@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EventsParticipating">
+
+
+    <EditText
+        android:id="@+id/editTextSportsBranch"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:hint="Enter the event's branch:" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:hint="Enter the date (YYYY-MM-DD): " />
+
+    <EditText
+        android:id="@+id/editTextAverageTime"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:inputType="numberDecimal"
+        android:hint="Enter your average time in it in seconds: "/>
+
+    <EditText
+        android:id="@+id/editTextPassed"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:hint="Enter yes or no if you passed: " />
+
+    <EditText
+        android:id="@+id/editTextBestTime"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:inputType="number"
+        android:hint="Enter your best time in it in seconds: "/>
+
+    <Button
+        android:id="@+id/buttonAddEvent"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="5dp"
+        android:text="Add event" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="5dp"
+        android:text="Update event" />
+
+    <Button
+        android:id="@+id/buttonRemove"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="5dp"
+        android:text="Remove event" />
+
+    <Spinner
+        android:id="@+id/spinnerFilter"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="125dp" />
+
+    <ListView
+        android:id="@+id/listViewEvents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

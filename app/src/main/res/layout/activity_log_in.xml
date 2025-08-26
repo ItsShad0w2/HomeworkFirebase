@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LogIn">
+
+
+    <TextView
+        android:id="@+id/textViewLogIn"
+        android:layout_width="250dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="25dp"
+        android:text="Log In"
+        android:textSize="50sp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="55dp"
+        android:inputType="textEmailAddress"
+        android:hint="Enter your email: " />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="25dp"
+        android:inputType="numberPassword"
+        android:hint="Enter your password: " />
+
+    <Button
+        android:id="@+id/buttonLogIn"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="25dp"
+        android:text="Log in" />
+
+    <Button
+        android:id="@+id/buttonToSignIn"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="25dp"
+        android:text="To sign in" />
+
+</LinearLayout>

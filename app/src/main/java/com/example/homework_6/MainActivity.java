@@ -3,6 +3,7 @@ package com.example.homework_6;
 import static com.example.homework_6.Firebase.firebaseAuth;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,7 +31,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity
 {
     EditText email, numberPassword;
-    Button buttonSignUp;
+    Button buttonSignUp, buttonLogIn;
 
 
     @Override
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity
         email = findViewById(R.id.email);
         numberPassword = findViewById(R.id.numberPassword);
         buttonSignUp = findViewById(R.id.buttonSignUp);
+        buttonLogIn = findViewById(R.id.buttonToLogIn);
 
         buttonSignUp.setOnClickListener(new View.OnClickListener()
         {
@@ -51,6 +53,17 @@ public class MainActivity extends AppCompatActivity
                 createUser();
             }
         });
+
+        buttonLogIn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(MainActivity.this, LogIn.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     public void createUser()
@@ -81,6 +94,8 @@ public class MainActivity extends AppCompatActivity
                         if(user != null)
                         {
                             Toast.makeText(MainActivity.this, "Welcome to the application", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(MainActivity.this, UsersList.class);
+                            startActivity(intent);
                         }
                     }
                     else
@@ -115,8 +130,8 @@ public class MainActivity extends AppCompatActivity
                 }
             });
         }
-
     }
+
 
 
 }
