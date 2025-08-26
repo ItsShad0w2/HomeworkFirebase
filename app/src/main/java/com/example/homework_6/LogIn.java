@@ -107,7 +107,7 @@ public class LogIn extends AppCompatActivity
                             }
                             else
                             {
-                                Toast.makeText(LogIn.this, "An error occured. Please try again later", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LogIn.this, "An error occurred. Please try again later", Toast.LENGTH_SHORT).show();
                             }
                         }
                     }
